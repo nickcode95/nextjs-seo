@@ -1,0 +1,6 @@
+User-agent *
+Allow: /$
+Allow: /about$
+Allow: /case-studies$
+Allow: /contact$
+Allow: /services$
