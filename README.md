@@ -14,3 +14,6 @@ Contains an opinionated module cor calling the Image module from Next Js. The `s
 
 ## HorizontalLine
 Call this module to create a horizontal line next to another UI component within a flex container
+
+## ImageWithLink
+Allows the render of an image that links to an external href. Accepts the props of `href`, image `src` and `alt`
