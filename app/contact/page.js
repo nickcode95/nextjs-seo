@@ -1,5 +1,5 @@
+'use client'
 import React, { useState } from 'react';
-
 
 export default function Contact() {
     const [form, setForm] = useState('')
@@ -8,7 +8,8 @@ export default function Contact() {
         fullName: '',
         email: '',
         company: '',
-        message: ''
+        message: '',
+        number: ''
     });
 
     // Function to capture event from first name field
@@ -24,15 +25,15 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        if (fullForm.fullName && fullForm.email && fullForm.company && fullForm.message) {
+        if (fullForm.fullName && fullForm.email && fullForm.company && fullForm.number) {
             setForm({ state: 'loading' })
             try {
-                const res = await fetch(`api/nodemailer`, {
+                const res = await fetch(`/api/nodemailer`, { 
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(fullForm),
+                    body: (JSON.stringify(fullForm)),
                 })
 
                 const { error } = await res.json()
@@ -53,7 +54,8 @@ export default function Contact() {
                     fullName: '',
                     email: '',
                     message: '',
-                    company: ''
+                    company: '',
+                    number: ''
                 })
             } catch (error) {
                 setForm({
@@ -63,10 +65,16 @@ export default function Contact() {
             }
         }
     };
-
     return (
         <div>
-            <section className="border-b-4 mb-4 px-12">
+            <div className="flex justify-center">
+                <h1 className='sub-title text-white text-7xl'>GET IN TOUCH</h1>
+            </div>
+
+            <section>
+            
+        <div>
+            <section className="border-b-4 mb-4 px-12 text-white">
                 <h1 className="text-3xl font-bold pb-4">Contact Us</h1>
             </section>
             <section>
@@ -92,7 +100,7 @@ export default function Contact() {
                             </div>
                             <div className="mb-5">
                                 <label
-                                    for="email"
+                                    htmlFor="email"
                                     className="mb-3 block text-base font-medium text-gray-300"
                                 >
                                     Email Address *
@@ -110,7 +118,7 @@ export default function Contact() {
                             </div>
                             <div className="mb-5">
                                 <label
-                                    for="subject"
+                                    htmlFor="subject"
                                     className="mb-3 block text-base font-medium text-gray-300"
                                 >
                                     Company *
@@ -128,7 +136,25 @@ export default function Contact() {
                             </div>
                             <div className="mb-5">
                                 <label
-                                    for="message"
+                                    htmlFor="phone"
+                                    className="mb-3 block text-base font-medium text-gray-300"
+                                >
+                                    Phone Number *
+                                </label>
+                                <input
+                                    type="text"
+                                    name="number"
+                                    id="number"
+                                    placeholder="Enter your Phone Number"
+                                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                                    required
+                                    onChange={handleChange}
+                                    value={fullForm.number}
+                                />
+                            </div>
+                            <div className="mb-5">
+                                <label
+                                    htmlFor="message"
                                     className="mb-3 block text-base font-medium text-gray-300"
                                 >
                                     Message
@@ -143,7 +169,7 @@ export default function Contact() {
                                     value={fullForm.message}
                                 ></textarea>
                             </div>
-                            <div className='text-center'>
+                            <div className='text-center text-white'>
                             <button
                                 className="hover:shadow-form rounded-md bg-blue-500 py-3 px-8 text-base font-semibold text-white outline-none" type="submit"
                             >
@@ -163,5 +189,8 @@ export default function Contact() {
             </section>
         </div>
 
+
+            </section>
+        </div>
     )
 }
