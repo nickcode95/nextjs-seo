@@ -1,5 +1,5 @@
-https://www.firstsites.com.au
-https://www.firstsites.com.au/services
-https://www.firstsites.com.au/about
-https://www.firstsites.com.au/contact
-https://www.firstsites.com.au/case-studies
+https://www.<your-url>.com.au
+https://www.<your-url>.com.au/services
+https://www.<your-url>.com.au/about
+https://www.<your-url>.com.au/contact
+https://www.<your-url>.com.au/case-studies
