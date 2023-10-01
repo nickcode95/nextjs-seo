@@ -17,3 +17,10 @@ Call this module to create a horizontal line next to another UI component within
 
 ## ImageWithLink
 Allows the render of an image that links to an external href. Accepts the props of `href`, image `src` and `alt`
+
+
+# Dependencies
+Below is a list of third party or libraries used in conjunction with NextJs 13
+
+## content-layer
+content-layer is used to render blog posts from markdown files. The native NextJS router is used to handle image rendering of
