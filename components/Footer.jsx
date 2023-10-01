@@ -30,11 +30,11 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className='text-center'>
-                    <h3>contact@firstsites.com.au</h3>
+                    <h3>enterfooter</h3>
                 </div>
             </section>
             <div className='text-center'>
-                FirstSites 2023
+                yourcompany
             </div>
         </div>
     )
