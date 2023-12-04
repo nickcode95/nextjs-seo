@@ -1,6 +1,6 @@
 import { format, parseISO } from 'date-fns';
 import { allPosts } from 'contentlayer/generated';
-import Img from '../../../components/ui/Image';
+import Img from '../../components/ui/Image';
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }));
 

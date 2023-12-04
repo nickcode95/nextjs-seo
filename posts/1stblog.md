@@ -1,7 +1,7 @@
 ---
 title: First Blog
 date: 2023-09-01
-# image: /<path-relative-to-public>
+image: /1stblog/smiley.png
 alt: rescription of picture
 ---
 

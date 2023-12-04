@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { allPosts, Post } from 'contentlayer/generated'
-import Img from '../../components/ui/Image';
+import Img from '../components/ui/Image';
 
 function PostCard(post) {
   return (
