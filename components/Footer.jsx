@@ -8,10 +8,7 @@ export default function Footer() {
                 <div className='flex'>
                     <div className='font-bold  hidden md:block'>
                         <Link href='/'><p>Home</p></Link>
-                        <Link href='/services'><p>Services</p></Link>
-                        <Link href='/about'><p>About</p></Link>
-                        <Link href='/contact'><p>Contact</p></Link>
-                        <Link href='/case-studies'><p>Case Studies</p></Link>
+                        <Link href='/Contact'><p>Contact</p></Link>
                     </div>
                     <div className='sm:basis-2/3 md:flex-shrink-0 overflow-hidden md:mx-auto'>
                         <h3>Join our mailing list</h3>

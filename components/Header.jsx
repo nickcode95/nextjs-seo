@@ -40,7 +40,10 @@ export default function Header() {
             {/* Desktop Nav */}
             <nav className="flex items-center justify-between flex-wrap p-6">
                 <div className="flex items-center flex-shrink-0 text-white mr-6 sm:text-center">
-               <h1 className='text-5xl font-bold text-center'>My Blog</h1>
+                <Link href='/'>
+                <h1 className='text-5xl font-bold text-center'>My Blog</h1>
+                </Link>
+              
                         
                 </div>
                 <div className='font-bold items-center pb-4 pt-8 text-lg'>
@@ -49,8 +52,6 @@ export default function Header() {
                 <div className="w-full hidden sm:block flex-grow lg:flex lg:items-center text-right sm:hidden">
                     <div className="text-sm lg:flex-grow text-lg">
                         <Link href='/' className="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-white mr-4 text-lg">Home</Link>
-                        <Link href='blog' className="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-white mr-4 text-lg">Blog</Link>
-                        <Link href='about' className="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-white mr-4 text-lg">About</Link>
                         <Link href='contact' className="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-white mr-4 text-lg">Contact</Link>
                     </div>
                 </div>
