@@ -32,5 +32,8 @@ Read the Contentlayer docs for more info: https://contentlayer.dev/docs
 ## rendering blogs
 In the `posts` directory, you will find an example markdown file called `1stblog`. Info contained within the horizontal rules or --- --- follows the schema defined in `contentlayer.config.js`. You will need to update the markdown file with relevant content you want rendered.
 
+# rendering images
+Images should be placed in the `public` directory. As a suggestion, when rendering images for blogs, create a directory for each blog post you wish to create.
+
 ## Version
 Update 5/12/23, fixed bug where image were not rendering
